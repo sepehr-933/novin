@@ -1,0 +1,66 @@
+//margin bottoms
+.mr-bt-xs {margin-bottom: 1rem}
+.mr-bt-sm {margin-bottom: 2rem}
+.mr-bt-md {margin-bottom: 3rem}
+.mr-bt-bg {margin-bottom: 4rem}
+.mr-bt-lg {margin-bottom: 5rem}
+.mr-bt-hg {margin-bottom: 6rem}
+.mr-bt-auto {margin-bottom: auto}
+
+//margin tops
+.mr-tp-xs {margin-top: 1rem}
+.mr-tp-sm {margin-top: 2rem}
+.mr-tp-md {margin-top: 3rem}
+.mr-tp-bg {margin-top: 4rem}
+.mr-tp-lg {margin-top: 5rem}
+.mr-tp-hg {margin-top: 6rem}
+.mr-tp-auto {margin-top: auto}
+
+//margin right
+.mr-rt-xs {margin-right: 1rem}
+.mr-rt-sm {margin-right: 2rem}
+.mr-rt-md {margin-right: 3rem}
+.mr-rt-bg {margin-right: 4rem}
+.mr-rt-lg {margin-right: 5rem}
+.mr-rt-hg {margin-right: 6rem}
+.mr-rt-auto {margin-right: auto}
+
+//margin left
+.mr-lf-xs {margin-left: 1rem}
+.mr-lf-sm {margin-left: 2rem}
+.mr-lf-md {margin-left: 3rem}
+.mr-lf-bg {margin-left: 4rem}
+.mr-lf-lg {margin-left: 5rem}
+.mr-lf-hg {margin-left: 6rem}
+.mr-lf-auto {margin-left: auto}
+
+//container
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 3rem;
+}
+
+//colors
+.text-primary {
+  color: $color-primary;
+}
+.text-secondary {
+  color: $color-secondary;
+}
+.text-primary__dark {
+  color:$color-primary-dark;
+}
+//displays
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.aligned-flex {
+  display: flex;
+  align-items: center;
+}

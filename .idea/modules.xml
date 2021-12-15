@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../codeamoozz/codeamooz-new-version/.idea/codeamooz-new-version.iml" filepath="$PROJECT_DIR$/../codeamoozz/codeamooz-new-version/.idea/codeamooz-new-version.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../new-codeamooz/final-codeamooz-ui-user/final-codeamooz-ui-user/.idea/final-codeamooz-ui-user.iml" filepath="$PROJECT_DIR$/../new-codeamooz/final-codeamooz-ui-user/final-codeamooz-ui-user/.idea/final-codeamooz-ui-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/novin.iml" filepath="$PROJECT_DIR$/.idea/novin.iml" />
     </modules>
   </component>

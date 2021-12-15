@@ -1,0 +1,68 @@
+.footer {
+  background: url('../../Assets/png/bg footer.png') no-repeat 50% 0/cover;
+  padding: 5rem;
+
+  padding-top: 25rem;
+  &-paragraph{
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  &-icon {
+    &__container {
+      transform: translate(-4rem, 0.5rem);
+      z-index: 11;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: max-content;
+      width: max-content;
+    }
+    &__mobile {
+      transform: translate(-4rem, 0.4rem);
+      padding: 0.3rem 0rem;
+    }
+    &__atsign {
+      transform: translate(-4rem, 0.4rem);
+      padding:0.3rem 0.7rem;
+    }
+  }
+  &-mobile {
+    width: 3rem;
+  }
+  &-atsign {
+    width: 1.7rem;
+  }
+  &-parts1 {
+    transform: translateX(-3rem);
+  }
+  &-input {
+    border: none;
+    padding-left: 10rem;
+  }
+  &-button {
+    border-radius: 8px 0 0 8px;
+    padding-top: 0.8rem ;
+    padding-bottom: 0.8rem;
+  }
+  &-content {
+    justify-content: space-between;
+  }
+  &-socials {
+    width: 3rem;
+    cursor: pointer;
+  }
+  &-container {
+    @include d-grid(1rem 4rem, 2);
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  &-heading {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  &-list {
+    cursor: pointer;
+  }
+}

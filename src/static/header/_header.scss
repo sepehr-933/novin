@@ -1,0 +1,48 @@
+.header {
+  background:url("../../Assets/png/bg header.png") no-repeat center center/cover;
+  height: 516px;
+  padding-top: 3rem;
+  &-container {
+    align-items: center;
+  }
+  &-logo {
+    width: 3rem;
+  }
+  &-heading {
+    font-weight: bold;
+  }
+  &-blue {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  &-input {
+    border-radius:  8px 0 0 8px;
+    background-color: white;
+    padding: 0.7rem 0.5rem;
+    outline: none;
+    border: none;
+    height: max-content;
+    &:focus {
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      color: rgba($color-gray,0.8);
+      font-size: 1.2rem;
+      font-family: "vazir", sans-serif;
+    }
+  }
+  &-search {
+    background-color: $color-primary;
+    border-radius: 0 8px 8px 0;
+    width: 3rem;
+    padding: 0.4rem;
+    cursor: pointer;
+  }
+}
+.narrow-line {
+  background-color: $color-primary;
+  width: 1px;
+  height: 2rem;
+  display: block;
+}

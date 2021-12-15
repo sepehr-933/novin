@@ -1,0 +1,29 @@
+.cardx {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  padding: 1.3rem;
+  margin: 1rem 2rem;
+  direction: rtl;
+  margin-bottom: 5rem;
+  &-heading {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  &-paragraph {
+
+  }
+  &-description {
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  &-profile {
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(black, 0.2);
+    border-radius: 50%;
+    margin-left: 1rem;
+  }
+}

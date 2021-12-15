@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../../Assets/fonts/Vazir.ttf");
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "vazir", sans-serif;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+body {
+  direction: rtl;
+}

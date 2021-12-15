@@ -1,0 +1,33 @@
+.path {
+  @include d-grid(9rem, 2);
+  transform: translateY(-30%);
+  &-content {
+  }
+  &-paragraph {
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
+  &-heading {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  &-button {
+    align-self: flex-end;
+  }
+  &-img {
+    width: 100%;
+  }
+  &-support {
+    background-color: $color-primary;
+    padding: 1rem;
+    width: max-content;
+    border-radius: 50%;
+    margin-right: 3rem;
+    transform: translateY(-130%);
+  }
+}
+.support-img {
+  width: 3.5rem;
+  transform: translateY(10%);
+  cursor: pointer;
+}

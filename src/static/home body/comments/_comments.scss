@@ -1,0 +1,28 @@
+.comments {
+  &-heading {
+    font-weight: bold;
+    font-size: 3.2rem;
+  }
+  &-paragraph {
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+}
+
+//react slick arrows
+.slick-prev::before {
+  content: "" !important;
+  opacity: 1 !important;
+  color:white !important;
+}
+.slick-next::before {
+  content: "" !important;
+  opacity: 1 !important;
+  color:white !important;
+}
+.next-arrow {
+  transform: rotate(90deg);
+}
+.prev-arrow {
+  transform: rotate(-90deg);
+}

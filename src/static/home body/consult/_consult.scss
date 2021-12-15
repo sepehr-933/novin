@@ -1,0 +1,58 @@
+.consult {
+  background-color: #fafafa;
+  padding: 5rem;
+  margin-bottom: 17rem;
+  &-container {
+    @include d-grid(7rem, 2);
+  }
+  &-image {
+    width: 100%;
+  }
+  &-heading {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  &-paragraph {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  &-input {
+    background-color: white;
+    border-radius: 8px;
+    border: solid 2.5px #d0d0d0;
+    height: max-content;
+    padding: 1.4rem 5rem ;
+    z-index: 10;
+    &:focus {
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      font-family: "vazir", sans-serif;
+      color: #bbbbbb;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+  &-img {
+    width: 1.7rem;
+    &__container {
+      background-color: #f0f0f0;
+      transform: translate(-30%,117%);
+      padding: 0.5rem 0.7rem;
+      width: max-content;
+      border-radius: 5px;
+    }
+    &-2 {
+      width: 1.7rem;
+      height: 2rem;
+    }
+  }
+  &-phone {
+    transform: translateY(-35%);
+  }
+  &-button {
+    width: 62%;
+    transform: translateY(-45%);
+    text-align: center;
+  }
+}
