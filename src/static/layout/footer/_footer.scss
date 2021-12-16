@@ -1,8 +1,16 @@
 .footer {
-  background: url('../../Assets/png/bg footer.png') no-repeat 50% 0/cover;
+  background: url('../../../Assets/png/bg footer.png') no-repeat 50% 0/cover;
   padding: 5rem;
-
   padding-top: 25rem;
+  @include respond(big-phone) {
+    padding-top: 30rem;
+  }
+  &-form {
+    @include respond(big-phone) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
   &-paragraph{
     font-weight: bold;
     font-size: 1.4rem;
@@ -36,22 +44,44 @@
   }
   &-parts1 {
     transform: translateX(-3rem);
+    @include respond(big-phone) {
+      transform: translateX(0);
+      margin-bottom: 2rem;
+    }
+  }
+  &-parts2 {
+    @include respond(big-phone) {
+      margin-bottom: 2rem;
+    }
   }
   &-input {
     border: none;
     padding-left: 10rem;
+    @include respond(big-phone) {
+      padding-left: 0;
+    }
   }
   &-button {
     border-radius: 8px 0 0 8px;
     padding-top: 0.8rem ;
     padding-bottom: 0.8rem;
+    &__responsive {
+      width: 40%;
+    }
   }
   &-content {
     justify-content: space-between;
+    @include respond(big-phone) {
+      flex-direction: column;
+    }
   }
   &-socials {
     width: 3rem;
     cursor: pointer;
+    margin-left: 3rem;
+    @include respond(big-phone) {
+      margin-left: 1rem;
+    }
   }
   &-container {
     @include d-grid(1rem 4rem, 2);

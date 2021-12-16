@@ -1,13 +1,13 @@
 import React from 'react';
-import line from '../../../Assets/png/lines.png';
-import backend from '../../../Assets/png/back end.png';
-import frontend from '../../../Assets/png/front end.png';
-import mobile from '../../../Assets/png/mobile.png';
-import Buttonx from "../../shared/Button";
+import line from '../../../../Assets/png/lines.png';
+import backend from '../../../../Assets/png/back end.png';
+import frontend from '../../../../Assets/png/front end.png';
+import mobile from '../../../../Assets/png/mobile.png';
+import Buttonx from "../../../shared/Button";
 
 const Ways = () => {
   return (
-      <div className="ways container ">
+      <div className="ways container">
           <h1 className="ways-topic flex">
               <p className="text-secondary mr-lf-xs">
                   فقط
@@ -17,7 +17,7 @@ const Ways = () => {
               </p>
           </h1>
           <div className="ways-lines mr-bt-md">
-              <img src={line} alt="lines" className="ways-line"/>
+              <img src={line} alt="lines" className="ways-line display"/>
           </div>
           <div className="ways-choices">
               <div className="ways-card">

@@ -18,3 +18,56 @@
     flex-direction: $column;
   }
 }
+
+//responsive
+@mixin respond($breakpoint) {
+  @if $breakpoint == smallest-phone {
+    @media only screen and (max-width: 25em) {
+      //400px
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 30em) {
+      @content;
+    } //480px
+  }
+  @if $breakpoint == big-phone {
+    @media only screen and (max-width: 36.25em) {
+      //580px
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 48em) {
+      @content;
+    } //768px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      //900
+      @content;
+    }
+  }
+  @if $breakpoint == big-tablet {
+    @media only screen and (max-width: 62em) {
+      @content;
+    } //992px
+  }
+  @if $breakpoint == sm-laptop {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: 91em) {
+      @content;
+    } //1450px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 91em) {
+      @content;
+    } //1450
+  }
+}

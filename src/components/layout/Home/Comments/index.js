@@ -1,9 +1,11 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import Slider from "react-slick";
 import Cardx from "./Cardx";
-import arrow from '../../../Assets/png/icons8-collapse-arrow-25.png'
+import arrow from '../../../../Assets/png/icons8-collapse-arrow-25.png'
 
 const Comments = () => {
+    const [windowSize, setWindowSize] = useState();
+    const slidesToShow = windowSize > 800 ? 3 : 2
     //hypothetical api
     const users = [
         {name:"علی تقوی", grade:"دانشجوی برتر متخصص موبایل شو", comment:"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه  یک روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است"},
@@ -20,12 +22,15 @@ const Comments = () => {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: slidesToShow,
         slidesToScroll: 1,
         rtl:true,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
     };
+    useEffect(() => {
+        setWindowSize(window.innerWidth);
+    })
     return (
         <div className="comments container">
             <h1 className="comments-heading">
@@ -50,7 +55,7 @@ const Comments = () => {
             <h1 className="comments-heading">
                 نظرات شرکت‌ها درباره دانشجویان ما
             </h1>
-            <p className="comments-paragraph mr-bt-lg">
+            <p className="comments-paragraph mr-bt-lg ">
                 تا کنون ۲۵,۵۸۲ نفر از دانشجویان ما در شرکت های داخلی و خارجی مشغول به کار شده اند.
             </p>
             <div className="mr-bt-lg">

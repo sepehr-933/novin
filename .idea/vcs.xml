@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../codeamoozz/codeamooz-new-version" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../new-codeamooz/final-codeamooz-ui-user/final-codeamooz-ui-user" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../next/3click/click" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>

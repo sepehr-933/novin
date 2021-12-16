@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import logo from "../../../Assets/png/logo.png";
 import mobile from '../../../Assets/png/icon mobile.png';
 import atsign from '../../../Assets/png/@.png'
@@ -11,6 +11,10 @@ import linkedin from '../../../Assets/png/linkedin.png'
 import instagram from '../../../Assets/png/insta.png'
 
 const Footer = () => {
+    const [windowSize, setWindowSize] = useState();
+    useEffect(() => {
+        setWindowSize(window.innerWidth);
+    });
     return (
         <div className="footer">
             <div className="container">
@@ -41,7 +45,7 @@ const Footer = () => {
                         </div>
                         <input style={{borderRadius:"0 0 0 0"}} className="consult-input footer-input" placeholder="ایمیل شما"/>
                     </div>
-                    <Buttonx classes="footer-button">
+                    <Buttonx classes={`${windowSize > 580 ? "footer-button" : "footer-button__responsive"}`}>
                         عضویت در خبرنامه
                     </Buttonx>
                 </div>
@@ -76,11 +80,11 @@ const Footer = () => {
                             با ما همراه باشید...
                         </h2>
                         <div className="flex">
-                            <img src={whatsapp} alt="whatsapp" className="footer-socials mr-lf-md"/>
-                            <img src={linkedin} alt="linkedin" className="footer-socials mr-lf-md"/>
-                            <img src={telegram} alt="telegram" className="footer-socials mr-lf-md"/>
-                            <img src={twitter} alt="twitter" className="footer-socials mr-lf-md"/>
-                            <img src={instagram} alt="instagram" className="footer-socials mr-lf-md"/>
+                            <img src={whatsapp} alt="whatsapp" className="footer-socials "/>
+                            <img src={linkedin} alt="linkedin" className="footer-socials "/>
+                            <img src={telegram} alt="telegram" className="footer-socials "/>
+                            <img src={twitter} alt="twitter" className="footer-socials "/>
+                            <img src={instagram} alt="instagram" className="footer-socials "/>
                         </div>
                     </div>
                 </div>

@@ -2,8 +2,22 @@
   background-color: #fafafa;
   padding: 5rem;
   margin-bottom: 17rem;
+  @include respond(big-phone) {
+    margin-bottom: 6rem;
+    padding: 2rem;
+  }
   &-container {
     @include d-grid(7rem, 2);
+    @include respond(big-phone) {
+      @include d-grid(3rem, 1)
+    }
+  }
+  &-content {
+    @include respond(big-phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &-image {
     width: 100%;

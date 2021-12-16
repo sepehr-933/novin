@@ -11,5 +11,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="codeamooz-new-version" />
     <orderEntry type="module" module-name="final-codeamooz-ui-user" />
+    <orderEntry type="module" module-name="click" />
   </component>
 </module>

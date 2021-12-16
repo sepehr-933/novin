@@ -13,6 +13,12 @@ html {
   font-family: "vazir", sans-serif;
   overflow-x: hidden;
   font-size: 62.5%;
+  @include respond(sm-laptop) {
+    font-size: 50%;
+  }
+  @include respond(tab-port) {
+    font-size: 42.5%;
+  }
 }
 body {
   direction: rtl;

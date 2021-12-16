@@ -1,12 +1,16 @@
-import React from 'react';
-import Buttonx from "../../shared/Button";
-import confusedMan from '../../../Assets/png/IMAGE 1.png'
+import React,{useState,useEffect} from 'react';
+import Buttonx from "../../../shared/Button";
+import confusedMan from '../../../../Assets/png/IMAGE 1.png'
 
 
 const Path = () => {
+    const [windowSize, setWindowSize] = useState();
+    useEffect(() => {
+        setWindowSize(window.innerWidth);
+    })
     return (
         <div className="path container ">
-            <div className="path-content flex-column">
+            <div className="path-content flex-column mr-bt-md">
                 <h1 className="path-heading mr-bt-md">
                     مسیرتو مشخص کن
                 </h1>
@@ -19,7 +23,7 @@ const Path = () => {
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
                     از صنعت چاپ و با استفاده از طراحان گرافیک است
                 </p>
-                <Buttonx classes="path-button">
+                <Buttonx classes={`${windowSize > 580 && "path-button"}`}>
                     مشاهده ویدئو
                 </Buttonx>
             </div>

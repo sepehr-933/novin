@@ -1,8 +1,8 @@
 import React from 'react';
-import image from '../../../Assets/png/IMAGE 2.png';
-import user from '../../../Assets/png/icon user.png';
-import phone from '../../../Assets/png/icon phone.png';
-import Buttonx from "../../shared/Button";
+import image from '../../../../Assets/png/IMAGE 2.png';
+import user from '../../../../Assets/png/icon user.png';
+import phone from '../../../../Assets/png/icon phone.png';
+import Buttonx from "../../../shared/Button";
 
 const Consult = () => {
     return (

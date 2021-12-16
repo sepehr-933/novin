@@ -1,13 +1,19 @@
+//tailwind
+@import "~tailwindcss/base.css";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+//generic
+@import './generic/mixins';
 @import './generic/base';
 @import './generic/variables';
-@import './generic/mixins';
 @import './generic/utilities';
 //components
 @import './button/button';
-@import './header/header';
+@import 'layout/header/header';
 @import './home body/path/path';
 @import './home body/ways/ways';
 @import './home body/consult/consult';
 @import './home body/comments/comments';
 @import './home body/comments/cardx';
-@import './footer/footer';
+@import 'layout/footer/footer';

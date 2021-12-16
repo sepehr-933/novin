@@ -1,7 +1,13 @@
 .path {
   @include d-grid(9rem, 2);
+  @include respond(big-phone) {
+    @include d-grid(3rem, 1)
+  }
   transform: translateY(-30%);
   &-content {
+    @include respond(big-phone) {
+      text-align: center;
+    }
   }
   &-paragraph {
     font-size: 1.7rem;
@@ -31,3 +37,4 @@
   transform: translateY(10%);
   cursor: pointer;
 }
+
