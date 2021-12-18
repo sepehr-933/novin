@@ -30,7 +30,7 @@ const Comments = () => {
     };
     useEffect(() => {
         setWindowSize(window.innerWidth);
-    })
+    },[windowSize])
     return (
         <div className="comments container">
             <h1 className="comments-heading">
